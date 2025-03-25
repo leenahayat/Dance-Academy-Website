@@ -6,7 +6,7 @@
 ## ✨ Features  
 ✅ Home, Services, About, and Contact Us pages working correctly  
 ✅ Animated gallery  
-✅ Contact form saves user queries to MongoDB  
+✅ Contact form saves user's data to MongoDB  
 
 ---
 
