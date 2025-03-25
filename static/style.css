@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+#navbar {
+    background-color: brown;
+    font-family: 'Yeon Sung';
+    padding: 13px 17px; /* Fixed syntax */
+}
+
+#navbar ul {
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a { 
+    text-decoration: none;
+    padding: 13px 20px;
+    color: white;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+#navbar li a:hover {
+    color: rgb(195, 173, 173);
+    transform: scale(1.1); /* Enlarges the text slightly */
+}
+
+/* Hero Section (Image and Text Centering) */
+#img {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+#img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+#img h1 {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.5rem;
+    z-index: 10;
+    color: white;
+}
+
+/* Intro Section */
+#introSection {
+    color: white;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items:left;
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 600px;
+    background: url("/static/logo.png") center/cover no-repeat; /* Fixed path */
+}
+/* #introSection {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/static/dance-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 0 20px;
+  } */
+  
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #ff6b6b;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: -2px;
+    font-weight: 300;
+  }
+/* Intro Section Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: -10px;
+  }
+  
+  .cta-button, .cta-button-outline {
+    padding: 11px 28px; /* Reduced from 12px 30px */
+    font-size: 0.9rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button {
+    background: #ff6b6b;
+    color: white;
+    border: 2px solid #ff6b6b;
+  }
+  
+  .cta-button-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  /* Hover Effects */
+  .cta-button:hover {
+    background: #e05555;
+    transform: translateY(-2px);
+  }
+  
+  .cta-button-outline:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .cta-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .cta-button, .cta-button-outline {
+      padding: 6px 15px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* .dance-icon {
+    font-size: 2rem;
+    margin-top: 1rem;
+    animation: bounce 2s infinite;
+  } */
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+/* #introSection div.small {
+    font-size: 18px;
+    padding: 5px;
+    align-items: center;
+
+   
+}
+#introSection div.em {
+    font-size: 18px;
+    padding: 5px;
+    align-items: center;
+    font-style: normal;
+   
+} */
+/* Mission Section */
+#missionSection {
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    align-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+
+
+}
+#missionSection h2{
+    font-size: 26px;
+    font-family: 'Yeon Sung';
+    text-align: center;
+    padding-top: 12px;
+    
+}
+/* .card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 25%;
+    height: 70%;
+   
+    margin: 23px 25px;
+    
+} */
+.card {
+    display: block;
+    top: 0px;
+    width: 50%;
+    position: relative;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  
+    &:hover {
+      transition: all 0.2s ease-out;
+      box-shadow: 10px 10px 5px 8px rgb(222, 220, 220);
+      top: -4px;
+      border: 1px solid #cccccc;
+      background-color: white;
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #061d1f;
+      height: 32px;
+      width: 32px;
+      border-radius: 42px;
+      transform: scale(2);
+      transform-origin: 50% 50%;
+      transition: transform 0.15s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(2.15);
+    }
+  }
+
+.card h3 {
+    text-align: center;
+    margin-top: 7%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 132px;
+    padding: 0 14px;
+    margin-top: 15%;
+}
+.card-img img{
+    height: inherit; 
+}
+/* Sponsors/Social Icons Section */
+#sponsorsSection {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    height: fit-content;
+}
+
+#sponsorsSection h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+}
+
+#sponsorsSection h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #e63946;
+    margin: 15px auto 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons a {
+    color: #555;
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #555;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    background: transparent;
+    border-color: transparent;
+}
+
+.social-icons .fa-instagram:hover { color: #E1306C; }
+.social-icons .fa-x:hover { color: #000; }
+.social-icons .fa-facebook:hover { color: #1877F2; }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .social-icons {
+      gap: 20px;
+    }
+    
+    .social-icons a {
+      width: 50px;
+      height: 50px;
+      font-size: 1.8rem;
+    }
+  }
+  /* Footer */
+#footer {
+    background-color: black;
+    height: 70px;
+    display: flex;
+    justify-content:center; 
+    align-items:center; 
+    color: white; 
+    font-size: 14px;
+}
+/* style.css */
+
+/* Flexbox Layout for Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Takes up remaining space */
+}
+
+/* Footer */
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}

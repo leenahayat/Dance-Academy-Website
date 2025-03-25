@@ -1,0 +1,21 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+  style 
+    include ../static/style.css  
+    include ../static/styleabout.css  
+
+block content 
+  nav#navbar 
+    ul 
+      li: a(href="/") Home   
+      li: a(href="/about") About 
+      li: a(href="/services") Services
+      li: a(href="/contact") Contact Us
+
+  section#aboutSection
+    h1 About Us
+    p Welcome to Dance Academy! We are passionate about teaching dance and helping our students achieve their dreams. Our experienced instructors and state-of-the-art facilities make us the best choice for dance enthusiasts.

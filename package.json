@@ -1,0 +1,25 @@
+{
+  "name": "dance-website",
+  "version": "1.0.0",
+  "description": "This is a popular website for a popular academy ",
+  "main": "app.js",
+  "scripts": {
+    "test": "No test specified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Web-Development-Code-with-Harry-"
+  },
+  "keywords": [
+    "DW"
+  ],
+  "author": "Leena",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.2",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {}
+}

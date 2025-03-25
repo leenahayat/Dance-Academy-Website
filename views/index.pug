@@ -1,0 +1,62 @@
+doctype html
+html
+  head
+    title Dance Academy
+    style 
+      include ../static/style.css
+  body 
+    nav#navbar 
+      ul 
+        
+        
+        li: a(href="/") Home   
+        li: a(href="/") About 
+        li: a(href="/") Services
+        li: a(href="/") Contact Us
+    
+    section#introSection
+      div Welcome to HAYAT's Dance Academy
+      div.small Eat, Sleep, Dance and Repeat ...
+      div.em (✿◡‿◡)
+    
+    section#missionSection
+      //- h2 Our Mission →
+
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="/static/1.png") 
+          div.card-content
+            p Refine your moves and master every step with expert guidance
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src="/static/2.png")  
+          div.card-content
+            p Express yourself freely—any style, any groove, your way!
+      div.card
+        h3 Expert Teaching
+        div.card-box
+          div.card-img
+            img(src="/static/3.png")  
+          div.card-content
+            p Learn from professionals and take your skills to the next level.
+    section#sponsorsSection
+      h2 Our Sponsors
+      
+         
+        //- a(href="https://instagram.com" target="_blank")
+        //-   i.fa-brands.fa-instagram.fa-lg(style="color: #E1306C; margin-left: 10px;")
+        //- a(href="https://facebook.com" target="_blank")
+        //-   i.fa-brands.fa-facebook.fa-lg(style="color: #1877F2; margin-left: 10px;")
+        //- a(href="https://twitter.com" target="_blank")
+        //-   i.fa-brands.fa-twitter.fa-lg(style="color: #1DA1F2; margin-left: 10px;")
+          
+    
+    footer#footer
+      | Copyright © 2025 DanceAcademy.com | All Rights Reserved
+
+    script
+      include ../static/index.js

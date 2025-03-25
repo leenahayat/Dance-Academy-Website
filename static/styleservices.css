@@ -1,0 +1,43 @@
+/* styleservices.css */
+body{
+    background-color: #f9f9f9;
+}
+/* Services Section */
+#servicesSection {
+    padding: 50px 20px;
+   
+    text-align: center;
+}
+
+#servicesSection h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#servicesSection ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#servicesSection ul li {
+    font-size: 20px;
+    color: #555;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#servicesSection ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}

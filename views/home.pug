@@ -1,0 +1,66 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+  link(rel="stylesheet" href="/static/style.css")  
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css")
+
+block content 
+  nav#navbar 
+    ul 
+      li: a(href="/") Home   
+      li: a(href="/about") About 
+      li: a(href="/services") Services
+      li: a(href="/contact") Contact Us
+
+  //- section#introSection
+  //-   div Welcome to Dance Academy
+  //-   div.small Eat, Sleep, Dance and Repeat ...
+  //-   div.em (✿◡‿◡)
+  section#introSection
+    div.main-heading
+      | Welcome to 
+      span.highlight Dance Academy
+    div.tagline Where Passion Meets Movement
+    div.cta-buttons
+      a(href="/contact" class="cta-button") Join Today
+      a(href="/services" class="cta-button-outline") Explore Classes
+    //- div.dance-icon ✿
+
+  section#missionSection
+    div.card
+      h3 Dance Perfection
+      div.card-box
+        div.card-img
+          img(src="/static/1.png") 
+        div.card-content
+          p Refine your moves and master every step with expert guidance.
+    div.card
+      h3 Dance the way you like
+      div.card-box
+        div.card-img
+          img(src="/static/2.png")  
+        div.card-content
+          p Express yourself freely—any style, any groove, your way!
+    div.card
+      h3 Expert Teaching
+      div.card-box
+        div.card-img
+          img(src="/static/3.png")  
+        div.card-content
+          p Learn from professionals and take your skills to the next level.
+
+  section#sponsorsSection
+    h2 Connect With Us
+    div.social-icons
+      a(href="https://instagram.com" target="_blank" aria-label="Instagram")
+        i.fa-brands.fa-instagram
+      a(href="https://x.com" target="_blank" aria-label="Twitter") 
+        i.fa-brands.fa-x
+      a(href="https://facebook.com" target="_blank" aria-label="Facebook")
+        i.fa-brands.fa-facebook
+
+  //- footer#footer
+  //-   | Copyright © 2025 DanceAcademy.com | All Rights Reserved

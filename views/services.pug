@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+  style 
+    include ../static/style.css  
+    include ../static/styleservices.css  
+
+block content 
+  nav#navbar 
+    ul 
+      li: a(href="/") Home   
+      li: a(href="/about") About 
+      li: a(href="/services") Services
+      li: a(href="/contact") Contact Us
+
+  section#servicesSection
+    h1 Our Services
+    ul
+      li Dance Classes for Kids
+      li Professional Dance Training
+      li Choreography for Events
+      li Dance Workshops
